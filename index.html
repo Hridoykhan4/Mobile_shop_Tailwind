@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grateful Organic</title>
+    <link rel="icon" type="image/x-icon" href="images/headLogo.jpg" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grateful Organic</title>
-  <link rel="icon" type="image/x-icon" href="images/headLogo.jpg">
+    <!-- Tailwind css and Daisyui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind css and Daisyui CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Fontawsome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google font CDN -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-  <style>
-    .font-manrope {
-      font-family: "Manrope", system-ui;
-    }
-  </style>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'btn-color': '#ABEF5F',
-            'light-btn': '#ABEF5F80',
-          }
-        }
+    <style>
+      .font-manrope {
+        font-family: "Manrope", system-ui;
       }
-    }
-  </script>
+    </style>
 
-<style>
- 
-</style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-color": "#ABEF5F",
+              "light-btn": "#ABEF5F80",
+            },
+          },
+        },
+      };
+    </script>
 
+    <style></style>
+  </head>
 
-</head>
+  <body class="font-manrope">
+    <nav class="bg-[#0E1133] py-6">
+      <div class="container mx-auto px-8 lg:px-24">
+        <div class="flex text-white justify-between items-center">
+          <div class="flex justify-center items-center space-x-8">
+            <div>
+              <img src="assets/logo-3.png" alt="" />
+            </div>
+            <div class="space-x-4 text-lg font-semibold hidden lg:block">
+              <a class="hover:text-orange-600 duration-300" href="#">Home</a>
+              <a class="hover:text-orange-600 duration-300" href="#">About</a>
+              <a class="hover:text-orange-600 duration-300" href="#"
+                >Services</a
+              >
+              <a class="hover:text-orange-600 duration-300" href="#">Blog</a>
+              <a class="hover:text-orange-600 duration-300" href="#"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="space-x-6 hidden md:block">
+            <button class="text-lg font-semibold">Login</button>
+            <button
+              class="bg-orange-500 px-6 py-3 font-semibold rounded-md text-lg hover:bg-transparent border-2 border-orange-600 duration-300"
+            >
+              Get Started
+            </button>
+          </div>
 
-<body class="font-manrope">
-
-<nav class="bg-[#0E1133] py-6">
-    <div class="container mx-auto px-8 lg:px-24">
-        <div class="flex text-white  justify-between items-center">
-                <div class="flex justify-center items-center space-x-8">
-                    <div>
-                        <img src="assets/logo-3.png" alt="">
-                    </div>
-                    <div class="space-x-4 text-lg font-semibold hidden lg:block">
-                        <a class="hover:text-orange-600 duration-300" href="#">Home</a>
-                        <a class="hover:text-orange-600 duration-300" href="#">About</a>
-                        <a class="hover:text-orange-600 duration-300" href="#">Services</a>
-                        <a class="hover:text-orange-600 duration-300" href="#">Blog</a>
-                        <a class="hover:text-orange-600 duration-300" href="#">Contact Us</a>
-                    </div>
-                </div>
-                <div class="space-x-6 hidden md:block">
-                    <button class="text-lg font-semibold">Login</button>
-                    <button class="bg-orange-500 px-6 py-3 font-semibold rounded-md text-lg hover:bg-transparent border-2 border-orange-600 duration-300">Get Started</button>
-                </div>
-
-                <label class="text-white text-2xl cursor-pointer md:hidden" for="click"><i class="fa-solid fa-bars"></i></label>
+          <label
+            class="text-white text-2xl cursor-pointer md:hidden"
+            for="click"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<header>
-    
-</header>
+    <header
+      class="bg-[#12174E] pt-24 flex flex-col items-center justify-center"
+    >
+      <div class="container px-8 lg:px-20">
+        <div class="text-white text-center mx-auto space-y-6">
+          <h1 class="text-4xl lg:text-7xl font-bold">
+            Create Way to <br />
+            Showcase Your <span class="text-orange-600">App</span>
+          </h1>
+          <p class="text-gray-400 text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            cum rem nisi consequuntur nam consectetur.
+          </p>
+          <div class="space-x-4 flex justify-center items-center">
+            <button
+              class="bg-orange-500 px-6 py-3 font-semibold rounded-md text-lg hover:bg-transparent border-2 border-orange-600 duration-300"
+            >
+              Get A Quote
+            </button>
+            <button
+              class="flex gap-1 justify-center items-center text-lg font-semibold"
+            >
+              <img src="assets/play-button.png" alt="" />
+              Play Video
+            </button>
+          </div>
+        </div>
 
+        <div
+          class="lg:translate-y-52 flex justify-center translate-y-24 md:translate-y-36"
+        >
+          <img src="assets/hero-thumb-4.png" alt="" />
+        </div>
+      </div>
+    </header>
 
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <main>
+        
+    </main>
+  </body>
 </html>
