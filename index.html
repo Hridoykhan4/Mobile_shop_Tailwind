@@ -37,7 +37,7 @@
       }
 
       @media screen and (max-width: 768px) {
-        nav ul{
+        nav ul {
           left: 200%;
           position: fixed;
           width: 100%;
@@ -50,11 +50,10 @@
           display: flex;
           padding-left: 1rem;
         }
-        
-      #check:checked ~ ul{
-        left: 0;
-      }
-      
+
+        #check:checked ~ ul {
+          left: 0;
+        }
       }
     </style>
 
@@ -76,43 +75,60 @@
   </head>
 
   <body class="font-manrope">
-
     <nav class="bg-[#0E1133] sticky top-0 py-6 text-white z-10 px-8 md:px-16">
       <div class="container mx-auto">
         <div class="flex justify-between items-center">
-
           <div>
             <img src="assets/logo-3.png" alt="" />
           </div>
-    
 
           <input type="checkbox" class="hidden" id="check" />
           <label for="check" class="md:hidden me-2">
             <i class="fa-solid fa-bars fa-2x md:hidden text-white"></i>
           </label>
-    
-         
+
           <ul class="flex gap-10 p-3 md:p-0 md:gap-5 text-xl md:hidden lg:flex">
-            <li><a class="hover:text-orange-500 font-bold text-xl" href="">Home</a></li>
-            <li><a class="hover:text-orange-500 font-bold text-xl" href="">About</a></li>
-            <li><a class="hover:text-orange-500 font-bold text-xl" href="">Contact Us</a></li>
-            <li><a class="hover:text-orange-500 font-bold text-xl" href="">Join Us</a></li>
+            <li>
+              <a class="hover:text-orange-500 font-bold text-xl" href=""
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-orange-500 font-bold text-xl" href=""
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-orange-500 font-bold text-xl" href=""
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-orange-500 font-bold text-xl" href=""
+                >Join Us</a
+              >
+            </li>
           </ul>
-    
 
           <div class="hidden md:block">
             <div class="flex gap-2">
-              <button class="bg-gray-600 text-white px-4 py-2 hover:bg-black transition rounded-xl">Login</button>
-              <button class="bg-gray-600 text-white px-4 py-2 hover:bg-black transition  rounded-xl">Subscribe</button>
+              <button
+                class="bg-gray-600 text-white px-4 py-2 hover:bg-black transition rounded-xl"
+              >
+                Login
+              </button>
+              <button
+                class="bg-gray-600 text-white px-4 py-2 hover:bg-black transition rounded-xl"
+              >
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    
 
-
-     <header
+    <header
       class="bg-[#12174E] pt-24 flex flex-col items-center justify-center"
     >
       <div class="container px-8 lg:px-20">
@@ -149,6 +165,19 @@
     </header>
 
     <main>
+
+      <section class="my-32 w-[90%] mx-auto">
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <video class="w-full h-auto" autoplay loop muted playsinline>
+                <source src="assets/large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-60 transition-opacity duration-300 hover:bg-opacity-30">
+                <h3 class="text-3xl font-bold text-white">Welcome to Our Mobile Shop</h3>
+            </div>
+        </div>
+    </section>
+
       <section class="mt-28">
         <div class="text-center">
           <h1 class="text-3xl md:text-5xl lg:text-7xl mb-6">What You Can Do</h1>
@@ -227,6 +256,8 @@
         </div>
       </section>
 
+     
+    
       <section class="my-24">
         <div class="">
           <div class="md:text-center bg-gray-200">
@@ -293,12 +324,19 @@
         </div>
       </section>
 
-      <section class="mt-48  pb-3 px-3 md:px-7 lg:px-14">
+      <section class="mt-48 pb-3 px-3 md:px-7 lg:px-14">
+        <h1
+          class="mb-4 font-bold text-2xl text-left md:text-center text-indigo-600"
+        >
+          Mobile Price List in Bangladesh
+        </h1>
 
-        <h1 class="mb-4 font-bold text-2xl text-left md:text-center text-indigo-600">Mobile Price List in Bangladesh</h1>
-      
-        <table class="w-full text-center border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
-          <thead class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white">
+        <table
+          class="w-full text-center border-collapse bg-white shadow-lg rounded-lg overflow-hidden"
+        >
+          <thead
+            class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white"
+          >
             <tr>
               <th class="py-4 px-6">Latest Mobiles</th>
               <th class="py-4 px-6">Price In Bangladesh</th>
@@ -346,92 +384,148 @@
               <td class="py-3 px-5 border">1,00,000 Tk</td>
             </tr>
           </tbody>
-        </table>  
+        </table>
       </section>
-      
+
+      <section class="md:my-20 md:mx-20 px-3">
+        <div class="bg-[url('../assets/bg.jpg')] bg-cover bg-no-repeat bg-center text-white rounded-lg shadow-lg overflow-hidden">
+            <div class="flex flex-col justify-center items-center text-center min-h-[450px] bg-black bg-opacity-50 transition-transform duration-500 transform hover:scale-105">
+                <h3 class="text-4xl font-extrabold mb-4 hover:text-yellow-400 transition duration-300">Awesome Mobiles</h3>
+                <p class="md:w-3/4 w-5/6 text-justify leading-7 mb-6">
+                    The Oppo F7 is designed to impress with its stunning 6.23-inch display and powerful Helio P60 chipset. With a remarkable 25MP selfie camera and a sleek design, it's perfect for capturing your best moments. Plus, its durable build, advanced security features, and all-day battery life make it an excellent choice for those on the go.
+                </p>
+                <button class="bg-gradient-to-r from-blue-500 to-teal-500 px-5 py-3 rounded-full text-xl font-bold transition-transform duration-300 transform hover:scale-105 shadow-lg">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
       <section class="my-14 px-3 md:px-7 lg:px-14">
-        <h2 class="text-left mb-5 font-extrabold md:text-center text-2xl md:text-3xl lg:text-5xl text-gray-600">Old Phone</h2>
+        <h2
+          class="text-left mb-5 font-extrabold md:text-center text-2xl md:text-3xl lg:text-5xl text-gray-600"
+        >
+          Old Phone
+        </h2>
         <div class="flex shadow-lg p-2 justify-between items-center md:mx-20">
           <h2 class="font-bold text-xl md:text-3xl">Oppo F7</h2>
           <div class="flex">
-              <i class="fa-solid fa-heart me-3 md:text-3xl"></i>
-              <i class="fa-solid fa-plus md:text-3xl"></i>
+            <i class="fa-solid fa-heart me-3 md:text-3xl"></i>
+            <i class="fa-solid fa-plus md:text-3xl"></i>
           </div>
         </div>
 
-        <div class="mt-10 flex flex-col lg:flex-row justify-center items-center">
-          <img class="w-full h-auto max-w-sm lg:max-w-lg" src="assets/oppo-f7-diamond-black-official-image.webp" alt="Oppo F7">
-          
-          <p class="mt-4 lg:mt-0 lg:ml-4 tracking-wide lg:leading-7 xl:lg-10 text-justify">
-              The Oppo F7, released in April 2018, is an upper mid-range smartphone that offers a blend of performance and style. Here we will share Oppo F7 price in Bangladesh and features.
-      
-              It features a 6.23-inch IPS LCD display with a resolution of 1080x2280 pixels, protected by Corning Gorilla Glass 5. The device is powered by the MediaTek MT6771 Helio P60 chipset, with 4GB of RAM and 64GB of internal storage, expandable via a dedicated microSDXC slot.
-      
-              For photography offers a 16MP rear camera with features like LED flash, HDR, and panorama. For selfie 25MP front camera. Both cameras are capable of recording 1080p videos. The Oppo F7 runs on Android 8.1 (Oreo) with ColorOS 5.
-      
-              The device includes a glass front, plastic back, and frame, with a rear-mounted fingerprint sensor for security. The device is equipped with a non-removable Li-Ion 3400mAh battery.
+        <div
+          class="mt-10 flex flex-col lg:flex-row justify-center items-center"
+        >
+          <img
+            class="w-full h-auto max-w-sm lg:max-w-lg"
+            src="assets/oppo-f7-diamond-black-official-image.webp"
+            alt="Oppo F7"
+          />
+
+          <p
+            class="mt-4 lg:mt-0 lg:ml-4 tracking-wide lg:leading-7 xl:lg-10 text-justify"
+          >
+            The Oppo F7, released in April 2018, is an upper mid-range
+            smartphone that offers a blend of performance and style. Here we
+            will share Oppo F7 price in Bangladesh and features. It features a
+            6.23-inch IPS LCD display with a resolution of 1080x2280 pixels,
+            protected by Corning Gorilla Glass 5. The device is powered by the
+            MediaTek MT6771 Helio P60 chipset, with 4GB of RAM and 64GB of
+            internal storage, expandable via a dedicated microSDXC slot. For
+            photography offers a 16MP rear camera with features like LED flash,
+            HDR, and panorama. For selfie 25MP front camera. Both cameras are
+            capable of recording 1080p videos. The Oppo F7 runs on Android 8.1
+            (Oreo) with ColorOS 5. The device includes a glass front, plastic
+            back, and frame, with a rear-mounted fingerprint sensor for
+            security. The device is equipped with a non-removable Li-Ion 3400mAh
+            battery.
           </p>
-      </div>
-      
-
-      <div class="mt-8">
-    
-        <h2 class="font-bold text-gray-600 border shadow-lg p-2 mb-2">Oppo F17 Price in Bangladesh 2024 & Release Date</h2>
-
-        <div class="grid grid-cols-2 bg-white border gap-3">
-         <table class="border-collapse border-gray-600">
-          <h3 class="border border-gray-100">Name</h3>
-          <p class="border border-gray-100">Oppo F17</p>
-
-          <h3 class="border border-gray-100">Official Price</h3>
-          <p class="border border-gray-100">BDT. 20,990</p>
-
-          <h3 class="border border-gray-100">Release Date</h3>
-          <p class="border border-gray-100">24-Sep-2020</p>
-
-          <h3 class="border border-gray-100">Market Status</h3>
-          <p class="border border-gray-100">In Stock</p>
-         </table>
         </div>
-      </div>
 
+        <div class="mt-8">
+          <h2 class="font-bold text-gray-600 border shadow-lg p-2 mb-2">
+            Oppo F17 Price in Bangladesh 2024 & Release Date
+          </h2>
 
-      <div class="mt-20">
-        <div class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-500 ease-in-out">
-            <input type="radio" name="my-accordion"  />
-            <div class="collapse-title text-xl font-medium flex justify-between items-center p-4">
-                <span>📱 Oppo F7 Features</span>
-                
-            </div>
-            <div class="collapse-content p-4">
-                <p>The Oppo F7 features a stunning 6.23-inch display, a powerful Helio P60 chipset, and a remarkable 25MP selfie camera for capturing perfect moments.</p>
-            </div>
+          <div class="grid grid-cols-2 bg-white border gap-3">
+            <table class="border-collapse border-gray-600">
+              <h3 class="border border-gray-100">Name</h3>
+              <p class="border border-gray-100">Oppo F17</p>
+
+              <h3 class="border border-gray-100">Official Price</h3>
+              <p class="border border-gray-100">BDT. 20,990</p>
+
+              <h3 class="border border-gray-100">Release Date</h3>
+              <p class="border border-gray-100">24-Sep-2020</p>
+
+              <h3 class="border border-gray-100">Market Status</h3>
+              <p class="border border-gray-100">In Stock</p>
+            </table>
+          </div>
         </div>
-    
-        <div class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-300 ease-in-out mt-4">
+
+        <div class="mt-20">
+          <div
+            class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-500 ease-in-out"
+          >
             <input type="radio" name="my-accordion" />
-            <div class="collapse-title text-xl font-medium flex justify-between items-center p-4">
-                <span>📱 Samsung Galaxy A50</span>
-                
+            <div
+              class="collapse-title text-xl font-medium flex justify-between items-center p-4"
+            >
+              <span>📱 Oppo F7 Features</span>
             </div>
             <div class="collapse-content p-4">
-                <p>The Samsung Galaxy A50 offers a 6.4-inch Super AMOLED display, triple rear cameras for versatile photography, and a large 4000mAh battery for all-day use.</p>
+              <p>
+                The Oppo F7 features a stunning 6.23-inch display, a powerful
+                Helio P60 chipset, and a remarkable 25MP selfie camera for
+                capturing perfect moments.
+              </p>
             </div>
-        </div>
-    
-        <div class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-300 ease-in-out mt-4">
+          </div>
+
+          <div
+            class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-300 ease-in-out mt-4"
+          >
             <input type="radio" name="my-accordion" />
-            <div class="collapse-title text-xl font-medium flex justify-between items-center p-4">
-                <span>📱 Xiaomi Redmi Note 9</span>
-                
+            <div
+              class="collapse-title text-xl font-medium flex justify-between items-center p-4"
+            >
+              <span>📱 Samsung Galaxy A50</span>
             </div>
             <div class="collapse-content p-4">
-                <p>The Xiaomi Redmi Note 9 features a 6.53-inch display, quad-camera setup for stunning photos, and a 5020mAh battery for extended performance.</p>
+              <p>
+                The Samsung Galaxy A50 offers a 6.4-inch Super AMOLED display,
+                triple rear cameras for versatile photography, and a large
+                4000mAh battery for all-day use.
+              </p>
             </div>
+          </div>
+
+          <div
+            class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition duration-300 ease-in-out mt-4"
+          >
+            <input type="radio" name="my-accordion" />
+            <div
+              class="collapse-title text-xl font-medium flex justify-between items-center p-4"
+            >
+              <span>📱 Xiaomi Redmi Note 9</span>
+            </div>
+            <div class="collapse-content p-4">
+              <p>
+                The Xiaomi Redmi Note 9 features a 6.53-inch display,
+                quad-camera setup for stunning photos, and a 5020mAh battery for
+                extended performance.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-    
-     </section>
+      </section>
+
+
+     
 
 
     </main>
@@ -458,6 +552,5 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
-
   </body>
 </html>
