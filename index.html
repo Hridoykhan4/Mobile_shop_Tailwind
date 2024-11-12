@@ -6,7 +6,7 @@
     <title>Mobile Shop</title>
     <link rel="icon" type="image/x-icon" href="images/headLogo.jpg" />
 
-    <!-- Tailwind css and Daisyui CDN -->
+    <!-- Tailwind css and DaisyUIi CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -32,6 +32,10 @@
     />
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       .font-manrope {
         font-family: "Manrope", system-ui;
       }
@@ -41,14 +45,14 @@
           left: 200%;
           position: fixed;
           width: 100%;
-          z-index: 1;
           top: 4.6rem;
-          background-color: rgba(0, 0, 0, 0.6);
-          backdrop-filter: blur(4px) brightness(0.9);
+          z-index: 1;
           flex-direction: column;
-          transition: 0.6s ease-in-out;
           display: flex;
           padding-left: 1rem;
+          background-color: rgba(0, 0, 0, 0.6);
+          backdrop-filter: blur(4px) brightness(0.9);
+          transition: 0.6s ease-in-out;
         }
 
         #check:checked ~ ul {
@@ -70,8 +74,6 @@
         },
       };
     </script>
-
-    <style></style>
   </head>
 
   <body class="font-manrope">
@@ -182,15 +184,15 @@
       </div>
     </header>
 
-    <main>
-      <section class="my-32 max-w-[90%] mx-auto">
+    <main class="">
+      <section class="my-20 max-w-[90%] mx-auto">
         <div class="relative overflow-hidden rounded-lg shadow-lg">
           <video class="w-full h-auto" autoplay loop muted playsinline>
             <source src="assets/large.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div
-            class="absolute inset-0 text-center flex justify-center items-center bg-black bg-opacity-10 transition-opacity duration-300 hover:bg-opacity-30"
+            class="absolute inset-0 text-center flex justify-center items-center bg-black bg-opacity-20 transition-opacity duration-300 hover:bg-opacity-30"
           >
             <h3 class="text-3xl text-center font-bold mr-3 sm:mr-0 text-white">
               Welcome to Our Mobile Shop
@@ -199,7 +201,7 @@
         </div>
       </section>
 
-      <section class="mt-28">
+      <section class="mt-20">
         <div class="text-center">
           <h1 class="text-3xl md:text-5xl lg:text-7xl mb-6">What You Can Do</h1>
           <p class="lg:w-1/2 mx-auto md:w-3/4 w-[90%]">
@@ -338,22 +340,22 @@
             class="flex justify-center flex-col md:flex-row items-center mt-10 gap-6 md:mx-24 mx-2"
           >
             <div class="space-y-3 text-blue-400 font-bold">
-              <img src="assets/icons/unnamed.webp" alt="" />
+              <img class="w-full" src="assets/icons/unnamed.webp" alt="" />
               <h3><a href="#">Watches</a></h3>
             </div>
 
             <div class="space-y-3 text-blue-400 font-bold">
-              <img src="assets/icons/unnamed (1).webp" alt="" />
+              <img class="w-full" src="assets/icons/unnamed (1).webp" alt="" />
               <h3><a href="#">EarBuds</a></h3>
             </div>
 
             <div class="space-y-3 text-blue-400 font-bold">
-              <img src="assets/icons/unnamed (2).webp" alt="" />
+              <img class="w-full" src="assets/icons/unnamed (2).webp" alt="" />
               <h3><a href="#">Doorbells</a></h3>
             </div>
 
             <div class="space-y-3 text-blue-400 font-bold">
-              <img src="assets/icons/unnamed (3).webp" alt="" />
+              <img class="w-full" src="assets/icons/unnamed (3).webp" alt="" />
               <h3><a href="#">Cameras</a></h3>
             </div>
           </div>
@@ -368,7 +370,7 @@
             class="grid grid-cols-1 md:grid-cols-3 w-full md:flex-row px-1 gap-3 md:gap-10 md:px-12 lg:px-16 items-center my-20"
           >
             <div
-              class="flex flex-col flex-1 gap-5 text-center bg-gray-200 p-5 bg-opacity-40 min-h-[200px]"
+              class="flex flex-col flex-1 gap-5 text-center bg-gray-200 p-5 bg-opacity-40"
             >
               <img
                 src="assets/icons/11.svg"
@@ -383,7 +385,7 @@
             </div>
 
             <div
-              class="flex flex-col gap-5 flex-1 text-center bg-gray-200 p-5 bg-opacity-40 min-h-[200px]"
+              class="flex flex-col gap-5 flex-1 text-center bg-gray-200 p-5 bg-opacity-40"
             >
               <img
                 src="assets/icons/12.svg"
@@ -398,7 +400,7 @@
             </div>
 
             <div
-              class="flex flex-col gap-5 flex-1 text-center bg-gray-200 p-5 bg-opacity-40 min-h-[200px]"
+              class="flex flex-col gap-5 flex-1 text-center bg-gray-200 p-5 bg-opacity-40"
             >
               <img
                 src="assets/icons/13.svg"
@@ -416,9 +418,9 @@
       </section>
 
       <section
-        class="max-w-[1440px] mx-auto w-[90%] px-6 md:px-16 py-10 md:py-20 flex flex-col md:flex-row gap-5 justify-center items-center"
+        class="max-w-[1440px] w-11/12 mx-auto flex flex-col md:flex-row gap-5 justify-center items-center"
       >
-        <div class="w-full md:w-1/2 space-y-4">
+        <div class="w-full md:w-1/2 space-y-5">
           <h3 class="text-2xl md:text-3xl font-bold">
             Experience cutting-edge performance with the latest features.
           </h3>
@@ -429,7 +431,7 @@
             <button class="bg-blue-500 mb-3 text-white px-4 py-2 rounded">
               Get Token
             </button>
-            <div class="mt-2 ">
+            <div class="mt-2">
               <span class="text-blue-600 underline cursor-pointer"
                 >White Paper</span
               >
@@ -437,9 +439,9 @@
           </div>
         </div>
 
-        <div class="w-full md:w-[30%] border rounded overflow-hidden">
+        <div class="w-full md:w-[30%] rounded overflow-hidden">
           <img
-            class="w-full h-full object-cover"
+            class="h-60 w-full object-cover rounded-md"
             src="assets/pexels-ozgomz-837268.jpg"
             alt="Product Image"
           />
@@ -575,7 +577,7 @@
         </table>
       </section>
 
-      <section class="md:p-20 p-4 bg-[#EEF5FF]">
+      <section class="md:p-10 p-4 bg-[#EEF5FF]">
         <div class="text-center pb-10">
           <p class="text-blue-400 font-bold">Our Services</p>
           <h1>Discover What We Offer for You</h1>
@@ -676,28 +678,30 @@
         <div class="container mx-auto text-center py-8">
           <h1 class="font-bold text-2xl mb-4">Guarantee & Warranty</h1>
           <p class="text-gray-700 mb-6">
-            Get peace of mind with our 1-year warranty on all mobile phones. We guarantee high-quality products and free service for any manufacturing defects.
+            Get peace of mind with our 1-year warranty on all mobile phones. We
+            guarantee high-quality products and free service for any
+            manufacturing defects.
           </p>
           <button class="text-blue-500 hover:underline">
             Learn More <span class="text-xl"> > </span>
           </button>
         </div>
-        
+
         <div class="relative mt-4 mb-16 p-10">
           <img
             src="assets/pexels-luckysam-47261.jpg"
-            class="w-full  h-[500px] mx-auto object-cover"
+            class="w-full h-[500px] mx-auto object-cover"
             alt="Beautiful scenery"
           />
 
           <div
-            class="absolute top-5 left-5 w-40 text-center bg-orange-700 text-white px-2 py-3 rounded-lg shadow-md"
+            class="absolute top-5 left-5 w-52 text-center bg-orange-700 text-white px-2 py-6 rounded-lg shadow-md"
           >
             <p class="text-sm">Explore breathtaking landscapes</p>
           </div>
 
           <div
-            class="absolute right-5 bottom-5 w-40 text-center bg-orange-700 text-white px-2 py-3 rounded-lg shadow-md"
+            class="absolute right-5 bottom-5 w-40 text-center bg-orange-700 text-white px-2 py-6 rounded-lg shadow-md"
           >
             <p class="text-sm">Adventure awaits you</p>
           </div>
@@ -716,7 +720,7 @@
           <div class="relative rounded-xl shadow-lg">
             <img
               src="assets/icons/iphone-518101_640.jpg"
-              class="w-full mx-auto h-[500px] object-cover"
+              class="w-full mx-auto h-[500px] rounded-lg object-cover"
               alt="Mobile Phone Image"
             />
             <div
@@ -746,7 +750,7 @@
           class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat bg-center text-white rounded-lg shadow-lg overflow-hidden"
         >
           <div
-            class="flex flex-col justify-center items-center text-center min-h-[450px] bg-black bg-opacity-50 transition-transform duration-500 transform hover:scale-105"
+            class="flex flex-col justify-center items-center text-center py-40 bg-black bg-opacity-50 transition-transform duration-500 transform hover:scale-105"
           >
             <h3
               class="text-4xl font-extrabold mb-4 hover:text-yellow-400 transition duration-300"
@@ -839,7 +843,7 @@
           <div
             class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition-all duration-500 ease-in-out"
           >
-            <input type="radio" name="my-accordion" />
+            <input type="checkbox" name="my-accordion" />
             <div
               class="collapse-title text-xl font-medium flex justify-between items-center p-4"
             >
@@ -857,7 +861,7 @@
           <div
             class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition-all duration-300 ease-in-out mt-4"
           >
-            <input type="radio" name="my-accordion" />
+            <input type="checkbox" name="my-accordion" />
             <div
               class="collapse-title text-xl font-medium flex justify-between items-center p-4"
             >
@@ -875,7 +879,7 @@
           <div
             class="collapse collapse-arrow bg-base-200 shadow-lg rounded-lg transition-all duration-300 ease-in-out mt-4"
           >
-            <input type="radio" name="my-accordion" />
+            <input type="checkbox" name="my-accordion" />
             <div
               class="collapse-title text-xl font-medium flex justify-between items-center p-4"
             >
